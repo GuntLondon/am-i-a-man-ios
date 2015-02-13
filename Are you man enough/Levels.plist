@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Jimmy Krankie</string>
+		<key>level</key>
+		<string>Not a man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Russell Brand</string>
+		<key>level</key>
+		<string>21st century man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Pee-wee Herman</string>
+		<key>level</key>
+		<string>Feeble man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Shia LaBeouf</string>
+		<key>level</key>
+		<string>Man child</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Steven Seagal</string>
+		<key>level</key>
+		<string>Almost a man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Phil Mitchell</string>
+		<key>level</key>
+		<string>Man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Lemmy</string>
+		<key>level</key>
+		<string>Man’s man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Arnie</string>
+		<key>level</key>
+		<string>Super man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>James Bond</string>
+		<key>level</key>
+		<string>Real man</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>person</key>
+		<string>Dolf Lundgren</string>
+		<key>level</key>
+		<string>He-man</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>DIY</string>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>questions</key>
+		<array>
+			<string>Have you successfully bled a radiator?</string>
+			<string>Have you made something useful with your bare hands?</string>
+			<string>Do you have a favourite type of cable?</string>
+			<string>Is your toolbox large, sturdy and well stocked?</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Sport &amp; Strength</string>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>questions</key>
+		<array>
+			<string>Do you understand the offside rule?</string>
+			<string>Have you run a marathon?</string>
+			<string>Have you fired a gun?</string>
+			<string>Have you beaten a grown man at an arm wrestle?</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Pain, Violence and Illegal Activities</string>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>questions</key>
+		<array>
+			<string>Have you been punched in the face?</string>
+			<string>Have you punched someone in the face?</string>
+			<string>Have you been arrested?</string>
+			<string>Have you driven a car over 100 mph?</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Man Skills &amp; Achievements</string>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>questions</key>
+		<array>
+			<string>Is your after toilet smell as bas as/worse than your dad&apos;s / elder male relative?</string>
+			<string>Have you worn the same pair of underpants for more than two consecutive days, with or without turning them inside out?</string>
+			<string>Have you not shaved for more than three months?</string>
+			<string>Can you credibly explain how a &quot;twin overhead cam shaft&quot; works?</string>
+			<string>Have you spent more than a trivial amount of time considering your plan of action come the fall of society and / or the zombie apocalypse.</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Food &amp; Drink </string>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>questions</key>
+		<array>
+			<string>Have you woken up in a different town after a night out?</string>
+			<string>Have you eaten horse?</string>
+			<string>Can you drink ten pints of premium continental lager or authentic English ale?</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Outdoors</string>
+		<key>image</key>
+		<string>man1.png</string>
+		<key>questions</key>
+		<array>
+			<string>Have you killed and gutted an animal?</string>
+			<string>Can you start a fire without matches or a lighter?</string>
+			<string>Have you destroyed anything with an axe?</string>
+			<string>Have you had a shit in a field, woods or outdoor area (not in your pants)?</string>
+			<string>Have you urinated in a vessel of finite capacity only to find it quickly overflowing?</string>
+		</array>
+	</dict>
+</array>
+</plist>
