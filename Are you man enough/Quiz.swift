@@ -70,6 +70,13 @@ class Quiz {
     }
     
     //public functions
+    func reset() {
+        user_defaults.setInteger(0, forKey: "category")
+        user_defaults.setInteger(0, forKey: "question")
+        user_defaults.setInteger(0, forKey: "score")
+        update_category()
+    }
+    
     func answer(answer:Bool) {
         if (answer) {
             score++

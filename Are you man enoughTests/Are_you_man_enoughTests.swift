@@ -11,26 +11,24 @@ import XCTest
 
 class Are_you_man_enoughTests: XCTestCase {
     
+    let quiz = Quiz()
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        quiz.reset()
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testInitialState() {
+        
+        XCTAssert( quiz.category.index == 0, "initial category is 0")
+        XCTAssert( quiz.question.index == 0, "initial question is 0")
+        
     }
     
 }

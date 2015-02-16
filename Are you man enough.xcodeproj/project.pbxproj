@@ -19,6 +19,10 @@
 		9642909A1A826025006011C9 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964290991A826025006011C9 /* QuestionViewController.swift */; };
 		965882481A8D29CD0066CBBA /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965882471A8D29CD0066CBBA /* Levels.plist */; };
 		96A3F6D41A87C41900F1C50F /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3F6D31A87C41900F1C50F /* Quiz.swift */; };
+		96C157541A8E2BD600303746 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3F6D31A87C41900F1C50F /* Quiz.swift */; };
+		96C157551A8E2BDC00303746 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 964290921A824D10006011C9 /* Questions.plist */; };
+		96C157561A8E2BDF00303746 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965882471A8D29CD0066CBBA /* Levels.plist */; };
+		96C157581A8E483A00303746 /* quizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C157571A8E483A00303746 /* quizTests.swift */; };
 		96F7EF161A8D28C0006B40A6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,7 @@
 		964290991A826025006011C9 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		965882471A8D29CD0066CBBA /* Levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
 		96A3F6D31A87C41900F1C50F /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		96C157571A8E483A00303746 /* quizTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizTests.swift; sourceTree = "<group>"; };
 		96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +121,7 @@
 			children = (
 				964290841A824034006011C9 /* Are_you_man_enoughTests.swift */,
 				964290821A824034006011C9 /* Supporting Files */,
+				96C157571A8E483A00303746 /* quizTests.swift */,
 			);
 			path = "Are you man enoughTests";
 			sourceTree = "<group>";
@@ -251,6 +257,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C157551A8E2BDC00303746 /* Questions.plist in Resources */,
+				96C157561A8E2BDF00303746 /* Levels.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C157581A8E483A00303746 /* quizTests.swift in Sources */,
+				96C157541A8E2BD600303746 /* Quiz.swift in Sources */,
 				964290851A824034006011C9 /* Are_you_man_enoughTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
