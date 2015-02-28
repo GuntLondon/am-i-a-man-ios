@@ -11,6 +11,8 @@ import UIKit
 class ResultViewController: UIViewController {
 
     
+    let quiz = Quiz.sharedInstance
+    
     @IBOutlet weak var level_label: UILabel!
     @IBOutlet weak var person_label: UILabel!
     @IBOutlet weak var person_image: UIImageView!
@@ -20,9 +22,11 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         
+        let result = quiz.result()
         
-        
-        
+        level_label.text = result.level
+        person_label.text = result.person
+        person_image.image = UIImage(named: result.image)
         
     }
 

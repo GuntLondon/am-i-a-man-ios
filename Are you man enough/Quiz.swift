@@ -9,18 +9,6 @@
 import Foundation
 
 
-struct Category {
-    var index: Int
-    var title: String
-    var image: String
-    var number_of_questions: Int
-}
-
-struct Question {
-    var index: Int
-    var content: String
-}
-
 class Quiz {
     
     class var sharedInstance: Quiz {
@@ -74,6 +62,7 @@ class Quiz {
         user_defaults.setInteger(0, forKey: "category")
         user_defaults.setInteger(0, forKey: "question")
         user_defaults.setInteger(0, forKey: "score")
+        score = 0;
         update_category()
     }
     
@@ -95,9 +84,25 @@ class Quiz {
         update_category()
     }
     
-    func result() -> (level:NSString, person:NSString, image:NSString) {
+    func result() -> (level:String, person:String, image:String) {
         
-        return (level: "-level-", person: "-person-", image:"man1.png")
+        //load levels
+        let path = NSBundle.mainBundle().pathForResource("Levels", ofType: "plist")
+        let levels = NSArray(contentsOfFile: path!)!
+        
+        // TODO: calculate dynamically from question set 
+        let number_of_questions = 25;
+        
+        let level_i = Int((Float(score) / Float(number_of_questions)) * Float(levels.count))
+
+        println( level_i )
+        println( levels[level_i]["level"] )
+        
+        return (
+            level: levels[level_i]["level"] as String,
+            person: levels[level_i]["person"] as String,
+            image: levels[level_i]["image"] as String
+        )
     }
     
     //private functions
@@ -105,8 +110,8 @@ class Quiz {
         let index = user_defaults.integerForKey("category")
         
         category.index = index
-        category.title = categories[index]["title"] as NSString
-        category.image = categories[index]["image"] as NSString
+        category.title = categories[index]["title"] as String
+        category.image = categories[index]["image"] as String
         category.questions = categories[index]["questions"] as NSArray
         
         update_question()
@@ -114,7 +119,7 @@ class Quiz {
     
     private func update_question() {
         question.index = user_defaults.integerForKey("question")
-        question.content = category.questions[question.index] as NSString
+        question.content = category.questions[question.index] as String
     }
 
     

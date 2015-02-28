@@ -51,6 +51,7 @@ class QuestionViewController: UIViewController {
         } else if ( quiz.category.index+1 < quiz.number_of_categories ) {
             
             quiz.increment_category()
+            
             let vc = storyboard.instantiateViewControllerWithIdentifier("category_view") as UIViewController
             self.showViewController(vc, sender: self)
             

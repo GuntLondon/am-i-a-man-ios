@@ -11,7 +11,6 @@
 		964290741A824034006011C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964290721A824034006011C9 /* Main.storyboard */; };
 		964290761A824034006011C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964290751A824034006011C9 /* Images.xcassets */; };
 		964290791A824034006011C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964290771A824034006011C9 /* LaunchScreen.xib */; };
-		964290851A824034006011C9 /* Are_you_man_enoughTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964290841A824034006011C9 /* Are_you_man_enoughTests.swift */; };
 		964290901A8246BD006011C9 /* man1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9642908F1A8246BD006011C9 /* man1.png */; };
 		964290931A824D10006011C9 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 964290921A824D10006011C9 /* Questions.plist */; };
 		964290951A8252C7006011C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964290941A8252C7006011C9 /* HomeViewController.swift */; };
@@ -45,7 +44,6 @@
 		964290781A824034006011C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9642907E1A824034006011C9 /* Are you man enoughTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Are you man enoughTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		964290831A824034006011C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		964290841A824034006011C9 /* Are_you_man_enoughTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Are_you_man_enoughTests.swift; sourceTree = "<group>"; };
 		9642908F1A8246BD006011C9 /* man1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man1.png; sourceTree = "<group>"; };
 		964290921A824D10006011C9 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
 		964290941A8252C7006011C9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		964290811A824034006011C9 /* Are you man enoughTests */ = {
 			isa = PBXGroup;
 			children = (
-				964290841A824034006011C9 /* Are_you_man_enoughTests.swift */,
 				964290821A824034006011C9 /* Supporting Files */,
 				96C157571A8E483A00303746 /* quizTests.swift */,
 			);
@@ -284,7 +281,6 @@
 			files = (
 				96C157581A8E483A00303746 /* quizTests.swift in Sources */,
 				96C157541A8E2BD600303746 /* Quiz.swift in Sources */,
-				964290851A824034006011C9 /* Are_you_man_enoughTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

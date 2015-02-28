@@ -10,11 +10,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-     let quiz = Quiz.sharedInstance
+    let quiz = Quiz.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        quiz.reset()
         
         if (quiz.question.index > 0) {
             self.performSegueWithIdentifier("showQuestion", sender: self)
