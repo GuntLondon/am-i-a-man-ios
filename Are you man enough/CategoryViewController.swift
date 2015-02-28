@@ -27,7 +27,12 @@ class CategoryViewController: UIViewController {
         category_image.image = UIImage(named: quiz.category.image)
         question_count_label.text = "\(quiz.category.questions.count) questions"
         
+        let timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "timeToMoveOn", userInfo: nil, repeats: false)
     }
-
+    
+    func timeToMoveOn() {
+        // TODO: add ability to skip by clicking too. Only trigger if the user hasn't clicked.
+        self.performSegueWithIdentifier("showQuestion", sender: self)
+    }
 
 }

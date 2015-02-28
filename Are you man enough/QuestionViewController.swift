@@ -8,9 +8,7 @@
 
 import UIKit
 
-class QuestionViewController: UIViewController {
-    
-    let quiz = Quiz.sharedInstance
+class QuestionViewController: BaseController {
     
     @IBOutlet var progress_label: UILabel!
     @IBOutlet var title_label: UILabel!
@@ -25,42 +23,28 @@ class QuestionViewController: UIViewController {
         
     }
 
-
     @IBAction func yes_button(sender: AnyObject) {
         quiz.answer(true)
-        go_to_next_screen()
+        celebration()
     }
     
-
     @IBAction func no_button(sender: AnyObject) {
         quiz.answer(false)
         go_to_next_screen()
     }
     
-    func go_to_next_screen() {
-        
+    // TODO: can we use an emoj for function name?
+    func celebration() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        if (quiz.question.index+1 < quiz.category.questions.count) {
-            
-            quiz.increment_question()
-            
-            let vc = storyboard.instantiateViewControllerWithIdentifier("question_view") as UIViewController
-            self.showViewController(vc, sender: self)
-            
-        } else if ( quiz.category.index+1 < quiz.number_of_categories ) {
-            
-            quiz.increment_category()
-            
-            let vc = storyboard.instantiateViewControllerWithIdentifier("category_view") as UIViewController
-            self.showViewController(vc, sender: self)
-            
-        } else {
-            
-            self.performSegueWithIdentifier("showResult", sender: self)
-            
-        }
-        
+        let vc = storyboard.instantiateViewControllerWithIdentifier("celebration_view") as UIViewController
+        self.showViewController(vc, sender: self)
     }
     
+    func update_values(){
+        if (quiz.question.index+1 < quiz.category.questions.count) {
+            quiz.increment_question()
+        } else if ( quiz.category.index+1 < quiz.number_of_categories ) {
+            quiz.increment_category()
+        }
+    }
 }

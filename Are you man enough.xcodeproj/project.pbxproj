@@ -23,6 +23,8 @@
 		96C157561A8E2BDF00303746 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965882471A8D29CD0066CBBA /* Levels.plist */; };
 		96C157581A8E483A00303746 /* quizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C157571A8E483A00303746 /* quizTests.swift */; };
 		96F7EF161A8D28C0006B40A6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */; };
+		F52E09031AA1FBA300BAC956 /* CelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E09021AA1FBA300BAC956 /* CelebrationViewController.swift */; };
+		F52E09071AA223C300BAC956 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E09061AA223C300BAC956 /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		96A3F6D31A87C41900F1C50F /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		96C157571A8E483A00303746 /* quizTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizTests.swift; sourceTree = "<group>"; };
 		96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F52E09021AA1FBA300BAC956 /* CelebrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebrationViewController.swift; sourceTree = "<group>"; };
+		F52E09061AA223C300BAC956 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 				964290971A826012006011C9 /* CategoryViewController.swift */,
 				964290991A826025006011C9 /* QuestionViewController.swift */,
 				96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */,
+				F52E09021AA1FBA300BAC956 /* CelebrationViewController.swift */,
+				F52E09061AA223C300BAC956 /* BaseController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +278,8 @@
 				9642906F1A824034006011C9 /* AppDelegate.swift in Sources */,
 				964290951A8252C7006011C9 /* HomeViewController.swift in Sources */,
 				96F7EF161A8D28C0006B40A6 /* ResultViewController.swift in Sources */,
+				F52E09071AA223C300BAC956 /* BaseController.swift in Sources */,
+				F52E09031AA1FBA300BAC956 /* CelebrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
