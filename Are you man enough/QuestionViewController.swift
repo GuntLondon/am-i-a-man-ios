@@ -39,12 +39,4 @@ class QuestionViewController: BaseController {
         let vc = storyboard.instantiateViewControllerWithIdentifier("celebration_view") as UIViewController
         self.showViewController(vc, sender: self)
     }
-    
-    func update_values(){
-        if (quiz.question.index+1 < quiz.category.questions.count) {
-            quiz.increment_question()
-        } else if ( quiz.category.index+1 < quiz.number_of_categories ) {
-            quiz.increment_category()
-        }
-    }
 }
