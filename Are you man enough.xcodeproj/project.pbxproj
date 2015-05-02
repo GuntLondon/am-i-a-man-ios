@@ -28,6 +28,8 @@
 		F5E595411AF4FDB400C9C8A5 /* background-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E595401AF4FDB400C9C8A5 /* background-01.png */; };
 		F5E595431AF4FDD100C9C8A5 /* ImageExperimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E595421AF4FDD100C9C8A5 /* ImageExperimentViewController.swift */; };
 		F5E595451AF5008200C9C8A5 /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E595441AF5008200C9C8A5 /* speech-bubble.png */; };
+		F5E595471AF5173D00C9C8A5 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5E595461AF5173400C9C8A5 /* Merriweather-Regular.ttf */; };
+		F5E595491AF5194C00C9C8A5 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5E595481AF5193400C9C8A5 /* Merriweather-Italic.ttf */; };
 		F5EECABA1AF4FA5C0032135F /* man-outdoors.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EECAB91AF4FA5C0032135F /* man-outdoors.png */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		F5E595401AF4FDB400C9C8A5 /* background-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-01.png"; sourceTree = "<group>"; };
 		F5E595421AF4FDD100C9C8A5 /* ImageExperimentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExperimentViewController.swift; sourceTree = "<group>"; };
 		F5E595441AF5008200C9C8A5 /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble.png"; sourceTree = "<group>"; };
+		F5E595461AF5173400C9C8A5 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		F5E595481AF5193400C9C8A5 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
 		F5EECAB91AF4FA5C0032135F /* man-outdoors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-outdoors.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				9642906D1A824034006011C9 /* Info.plist */,
+				F5E595481AF5193400C9C8A5 /* Merriweather-Italic.ttf */,
+				F5E595461AF5173400C9C8A5 /* Merriweather-Regular.ttf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E595491AF5194C00C9C8A5 /* Merriweather-Italic.ttf in Resources */,
+				F5E595471AF5173D00C9C8A5 /* Merriweather-Regular.ttf in Resources */,
 				964290901A8246BD006011C9 /* man1.png in Resources */,
 				964290741A824034006011C9 /* Main.storyboard in Resources */,
 				F5E595411AF4FDB400C9C8A5 /* background-01.png in Resources */,
