@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //quiz.reset()
+        quiz.reset()
         
         if(quiz.isComplete()){
             self.performSegueWithIdentifier("showResults", sender: self)
@@ -27,6 +27,10 @@ class HomeViewController: UIViewController {
         }
     }
 
+    @IBAction func generateFakeResults(sender: AnyObject) {
+        quiz.generateFakeResults()
+        self.performSegueWithIdentifier("showResults", sender: self)
+    }
 
 
 }

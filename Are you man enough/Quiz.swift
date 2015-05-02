@@ -62,18 +62,22 @@ class Quiz {
         user_defaults.setInteger(0, forKey: "category")
         user_defaults.setInteger(0, forKey: "question")
         user_defaults.setInteger(0, forKey: "score")
-        score = 0;
+        score = 0
         update_category()
     }
     
     func isComplete() -> Bool {
-        let last_category_index = number_of_categories - 1
-        let last_category: NSDictionary = categories.lastObject as NSDictionary
-        let last_category_questions: NSArray = last_category["questions"] as NSArray
-        let last_question_index: Int = last_category_questions.count - 1
-        let current_category_index: Int = user_defaults.integerForKey("category")
-        let current_question_index: Int = user_defaults.integerForKey("question")
-        return current_category_index == last_category_index && current_question_index == last_question_index
+        let currentCategoryIndex: Int = user_defaults.integerForKey("category")
+        let currentQuestionIndex: Int = user_defaults.integerForKey("question")
+        return currentCategoryIndex == getLastCategoryIndex() && currentQuestionIndex == getLastQuestionIndex()
+    }
+    
+    func generateFakeResults() {
+        user_defaults.setInteger(getLastCategoryIndex(), forKey: "category")
+        user_defaults.setInteger(getLastQuestionIndex(), forKey: "question")
+        // TODO: randomly generate a score between 0 and 25
+        score = 20
+        user_defaults.setInteger(score, forKey: "score")
     }
     
     func answer(answer:Bool) {
@@ -116,6 +120,16 @@ class Quiz {
     }
     
     //private functions
+    private func getLastCategoryIndex() -> Int {
+        return number_of_categories - 1
+    }
+    
+    private func getLastQuestionIndex() -> Int {
+        let last_category: NSDictionary = categories.lastObject as NSDictionary
+        let last_category_questions: NSArray = last_category["questions"] as NSArray
+        return last_category_questions.count - 1
+    }
+    
     private func update_category() {
         let index = user_defaults.integerForKey("category")
         
