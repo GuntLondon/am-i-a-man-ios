@@ -24,7 +24,7 @@ class Quiz {
         return Static.instance!
     }
     
-    //piblic variables
+    //public variables
     var number_of_categories: Int = 0
     
     var category = (
@@ -64,6 +64,16 @@ class Quiz {
         user_defaults.setInteger(0, forKey: "score")
         score = 0;
         update_category()
+    }
+    
+    func isComplete() -> Bool {
+        let last_category_index = number_of_categories - 1
+        let last_category: NSDictionary = categories.lastObject as NSDictionary
+        let last_category_questions: NSArray = last_category["questions"] as NSArray
+        let last_question_index: Int = last_category_questions.count - 1
+        let current_category_index: Int = user_defaults.integerForKey("category")
+        let current_question_index: Int = user_defaults.integerForKey("question")
+        return current_category_index == last_category_index && current_question_index == last_question_index
     }
     
     func answer(answer:Bool) {

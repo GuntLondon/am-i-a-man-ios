@@ -16,13 +16,15 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         //quiz.reset()
         
-        if (quiz.question.index > 0) {
-            self.performSegueWithIdentifier("showQuestion", sender: self)
-        } else if (quiz.category.index > 0) {
-            self.performSegueWithIdentifier("showCategory", sender: self)
+        if(quiz.isComplete()){
+            self.performSegueWithIdentifier("showResults", sender: self)
+        }else{
+            if (quiz.question.index > 0) {
+                self.performSegueWithIdentifier("showQuestion", sender: self)
+            } else if (quiz.category.index > 0) {
+                self.performSegueWithIdentifier("showCategory", sender: self)
+            }
         }
-        
-        
     }
 
 
