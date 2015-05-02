@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="47r-QA-w1C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="47r-QA-w1C">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -56,7 +56,7 @@
         <!--Category-->
         <scene sceneID="pHr-g0-kbv">
             <objects>
-                <viewController storyboardIdentifier="category_view" title="Category" id="oC2-IG-QFd" customClass="CategoryViewController" customModule="Are_you_man_enough" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="category_view" title="Category" id="oC2-IG-QFd" customClass="QuestionViewController" customModule="Are_you_man_enough" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cxc-9I-xUy"/>
                         <viewControllerLayoutGuide type="bottom" id="wa5-wE-aWd"/>
@@ -219,7 +219,7 @@
         <!--Celebration-->
         <scene sceneID="uv4-0H-g4P">
             <objects>
-                <viewController storyboardIdentifier="celebration_view" title="Celebration" id="fJa-z4-e6f" customClass="CelebrationViewController" customModule="Are_you_man_enough" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="celebration_view" title="Celebration" id="fJa-z4-e6f" customClass="QuestionViewController" customModule="Are_you_man_enough" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K4Y-nz-mDK"/>
                         <viewControllerLayoutGuide type="bottom" id="7MS-Eg-7jJ"/>
@@ -341,7 +341,7 @@
         <!--Finish message-->
         <scene sceneID="8fc-BT-RGh">
             <objects>
-                <viewController storyboardIdentifier="Finish Scene" title="Finish message" id="Gvk-wf-J3x" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Finish Scene" title="Finish message" id="Gvk-wf-J3x" customClass="QuestionViewController" customModule="Are_you_man_enough" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Dd-nJ-sd6"/>
                         <viewControllerLayoutGuide type="bottom" id="Vwh-Yq-BHL"/>
@@ -390,7 +390,7 @@
         <image name="man1.png" width="300" height="187"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CST-mq-X6x"/>
         <segue reference="RvQ-4p-bVW"/>
+        <segue reference="loc-Oj-QHI"/>
     </inferredMetricsTieBreakers>
 </document>
