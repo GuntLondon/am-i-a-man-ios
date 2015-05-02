@@ -75,8 +75,7 @@ class Quiz {
     func generateFakeResults() {
         user_defaults.setInteger(getLastCategoryIndex(), forKey: "category")
         user_defaults.setInteger(getLastQuestionIndex(), forKey: "question")
-        // TODO: randomly generate a score between 0 and 25
-        score = 20
+        score = Int(arc4random_uniform(26))
         user_defaults.setInteger(score, forKey: "score")
     }
     
