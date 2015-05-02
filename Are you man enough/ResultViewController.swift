@@ -30,5 +30,9 @@ class ResultViewController: UIViewController {
         
     }
 
+    @IBAction func resetResults(sender: AnyObject) {
+        quiz.reset()
+        self.performSegueWithIdentifier("showHome", sender: self)
+    }
 
 }

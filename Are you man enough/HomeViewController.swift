@@ -14,7 +14,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        quiz.reset()
         
         if(quiz.isComplete()){
             self.performSegueWithIdentifier("showResults", sender: self)
