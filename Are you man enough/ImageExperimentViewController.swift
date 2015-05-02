@@ -20,15 +20,12 @@ class ImageExperimentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func yesClicked(sender: AnyObject) {
+        let alert = UIAlertView()
+        alert.title = "Hey"
+        alert.message = "This is  one Alert"
+        alert.addButtonWithTitle("Working!!")
+        alert.show()
     }
-    */
 
 }

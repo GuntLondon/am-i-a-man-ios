@@ -30,6 +30,7 @@
 		F5E595451AF5008200C9C8A5 /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E595441AF5008200C9C8A5 /* speech-bubble.png */; };
 		F5E595471AF5173D00C9C8A5 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5E595461AF5173400C9C8A5 /* Merriweather-Regular.ttf */; };
 		F5E595491AF5194C00C9C8A5 /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5E595481AF5193400C9C8A5 /* Merriweather-Italic.ttf */; };
+		F5E5954B1AF51AC000C9C8A5 /* button-tick.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E5954A1AF51AC000C9C8A5 /* button-tick.png */; };
 		F5EECABA1AF4FA5C0032135F /* man-outdoors.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EECAB91AF4FA5C0032135F /* man-outdoors.png */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		F5E595441AF5008200C9C8A5 /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble.png"; sourceTree = "<group>"; };
 		F5E595461AF5173400C9C8A5 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
 		F5E595481AF5193400C9C8A5 /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		F5E5954A1AF51AC000C9C8A5 /* button-tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-tick.png"; sourceTree = "<group>"; };
 		F5EECAB91AF4FA5C0032135F /* man-outdoors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-outdoors.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				F5E595441AF5008200C9C8A5 /* speech-bubble.png */,
+				F5E5954A1AF51AC000C9C8A5 /* button-tick.png */,
 				F5E595401AF4FDB400C9C8A5 /* background-01.png */,
 				F5EECAB91AF4FA5C0032135F /* man-outdoors.png */,
 				9642908F1A8246BD006011C9 /* man1.png */,
@@ -275,6 +278,7 @@
 				964290931A824D10006011C9 /* Questions.plist in Resources */,
 				F5E595451AF5008200C9C8A5 /* speech-bubble.png in Resources */,
 				964290761A824034006011C9 /* Images.xcassets in Resources */,
+				F5E5954B1AF51AC000C9C8A5 /* button-tick.png in Resources */,
 				965882481A8D29CD0066CBBA /* Levels.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
