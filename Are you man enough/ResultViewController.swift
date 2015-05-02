@@ -12,22 +12,27 @@ class ResultViewController: UIViewController {
 
     
     let quiz = Quiz.sharedInstance
-    
+    @IBOutlet weak var message: UILabel!
+    /*
     @IBOutlet weak var level_label: UILabel!
     @IBOutlet weak var person_label: UILabel!
     @IBOutlet weak var person_image: UIImageView!
-    
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         let result = quiz.result()
-        
-        level_label.text = result.level
-        person_label.text = result.person
-        person_image.image = UIImage(named: result.image)
-        
+        var descriptor = ""
+        if result.score >= 10 {
+            descriptor = "mighty"
+        }else{
+            descriptor = "miserable"
+        }
+        message.text = "You are a \(result.level) with \(result.score) \(descriptor) man points."
+        /*
+        Twitter Facebook Email
+        Rank
+        */
     }
 
     @IBAction func resetResults(sender: AnyObject) {

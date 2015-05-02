@@ -97,7 +97,7 @@ class Quiz {
         update_category()
     }
     
-    func result() -> (level:String, person:String, image:String) {
+    func result() -> (score:Int, level:String, person:String, image:String) {
         
         //load levels
         let path = NSBundle.mainBundle().pathForResource("Levels", ofType: "plist")
@@ -112,6 +112,7 @@ class Quiz {
         println( levels[level_i]["level"] )
         
         return (
+            score: score,
             level: levels[level_i]["level"] as String,
             person: levels[level_i]["person"] as String,
             image: levels[level_i]["image"] as String
