@@ -58,6 +58,14 @@ class Quiz {
     }
     
     //public functions
+    func fake_data() {
+        // Loop categories
+        // loop questions
+        // how does question.index work?
+        score = 25;
+        
+    }
+    
     func reset() {
         user_defaults.setInteger(0, forKey: "category")
         user_defaults.setInteger(0, forKey: "question")

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="47r-QA-w1C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dZS-H3-KYI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -32,7 +32,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oC2-IG-QFd" kind="show" identifier="showCategory" id="Xjx-yJ-ctp"/>
+                                    <segue destination="oC2-IG-QFd" kind="presentation" identifier="showCategory" id="Xjx-yJ-ctp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,11 +113,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsj-bk-CQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Y3E-dD-I1m">
                     <connections>
-                        <segue destination="78I-et-bPV" kind="show" identifier="showQuestion" id="AGZ-cf-Vab"/>
+                        <segue destination="78I-et-bPV" kind="presentation" identifier="showQuestion" id="AGZ-cf-Vab"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2340" y="255"/>
+            <point key="canvasLocation" x="2308" y="203"/>
+        </scene>
+        <!--Image Experiment View Controller-->
+        <scene sceneID="faq-fo-orA">
+            <objects>
+                <viewController id="dZS-H3-KYI" customClass="ImageExperimentViewController" customModule="Are_you_man_enough" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3G3-pN-8rf"/>
+                        <viewControllerLayoutGuide type="bottom" id="cr2-kZ-daT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cbi-MC-luo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man-outdoors.png" translatesAutoresizingMaskIntoConstraints="NO" id="MBO-7c-har">
+                                <rect key="frame" x="16" y="163" width="212" height="274"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="Npg-Xw-Cdc">
+                                <rect key="frame" x="16" y="20" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you successfully bled a radiator?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NL-yd-8D6">
+                                <rect key="frame" x="29" y="20" width="215" height="105"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.37647058823529411" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DL-fq-XtC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3147" y="203"/>
         </scene>
         <!--Question-->
         <scene sceneID="Bzp-Kv-7ae">
@@ -387,10 +419,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="man-outdoors.png" width="424" height="548"/>
         <image name="man1.png" width="300" height="187"/>
+        <image name="speech-bubble.png" width="610" height="450"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CST-mq-X6x"/>
-        <segue reference="RvQ-4p-bVW"/>
+        <segue reference="AGZ-cf-Vab"/>
+        <segue reference="loc-Oj-QHI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -25,6 +25,10 @@
 		96F7EF161A8D28C0006B40A6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */; };
 		F52E09031AA1FBA300BAC956 /* CelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E09021AA1FBA300BAC956 /* CelebrationViewController.swift */; };
 		F52E09071AA223C300BAC956 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E09061AA223C300BAC956 /* BaseController.swift */; };
+		F5E595411AF4FDB400C9C8A5 /* background-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E595401AF4FDB400C9C8A5 /* background-01.png */; };
+		F5E595431AF4FDD100C9C8A5 /* ImageExperimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E595421AF4FDD100C9C8A5 /* ImageExperimentViewController.swift */; };
+		F5E595451AF5008200C9C8A5 /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E595441AF5008200C9C8A5 /* speech-bubble.png */; };
+		F5EECABA1AF4FA5C0032135F /* man-outdoors.png in Resources */ = {isa = PBXBuildFile; fileRef = F5EECAB91AF4FA5C0032135F /* man-outdoors.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F52E09021AA1FBA300BAC956 /* CelebrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelebrationViewController.swift; sourceTree = "<group>"; };
 		F52E09061AA223C300BAC956 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F5E595401AF4FDB400C9C8A5 /* background-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-01.png"; sourceTree = "<group>"; };
+		F5E595421AF4FDD100C9C8A5 /* ImageExperimentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExperimentViewController.swift; sourceTree = "<group>"; };
+		F5E595441AF5008200C9C8A5 /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble.png"; sourceTree = "<group>"; };
+		F5EECAB91AF4FA5C0032135F /* man-outdoors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-outdoors.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,9 @@
 		9642908E1A824692006011C9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F5E595441AF5008200C9C8A5 /* speech-bubble.png */,
+				F5E595401AF4FDB400C9C8A5 /* background-01.png */,
+				F5EECAB91AF4FA5C0032135F /* man-outdoors.png */,
 				9642908F1A8246BD006011C9 /* man1.png */,
 			);
 			name = Images;
@@ -162,6 +173,7 @@
 				96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */,
 				F52E09021AA1FBA300BAC956 /* CelebrationViewController.swift */,
 				F52E09061AA223C300BAC956 /* BaseController.swift */,
+				F5E595421AF4FDD100C9C8A5 /* ImageExperimentViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -215,7 +227,7 @@
 				TargetAttributes = {
 					964290681A824034006011C9 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 8G9A77V59L;
+						DevelopmentTeam = GUYSEY2XMT;
 					};
 					9642907D1A824034006011C9 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -249,8 +261,11 @@
 			files = (
 				964290901A8246BD006011C9 /* man1.png in Resources */,
 				964290741A824034006011C9 /* Main.storyboard in Resources */,
+				F5E595411AF4FDB400C9C8A5 /* background-01.png in Resources */,
 				964290791A824034006011C9 /* LaunchScreen.xib in Resources */,
+				F5EECABA1AF4FA5C0032135F /* man-outdoors.png in Resources */,
 				964290931A824D10006011C9 /* Questions.plist in Resources */,
+				F5E595451AF5008200C9C8A5 /* speech-bubble.png in Resources */,
 				964290761A824034006011C9 /* Images.xcassets in Resources */,
 				965882481A8D29CD0066CBBA /* Levels.plist in Resources */,
 			);
@@ -274,6 +289,7 @@
 			files = (
 				964290981A826012006011C9 /* CategoryViewController.swift in Sources */,
 				96A3F6D41A87C41900F1C50F /* Quiz.swift in Sources */,
+				F5E595431AF4FDD100C9C8A5 /* ImageExperimentViewController.swift in Sources */,
 				9642909A1A826025006011C9 /* QuestionViewController.swift in Sources */,
 				9642906F1A824034006011C9 /* AppDelegate.swift in Sources */,
 				964290951A8252C7006011C9 /* HomeViewController.swift in Sources */,
