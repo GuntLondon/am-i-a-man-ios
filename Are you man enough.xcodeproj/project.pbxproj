@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961C6E611AF63A540071AC80 /* button-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E601AF63A540071AC80 /* button-cross.png */; };
+		961C6E631AF63A630071AC80 /* background-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E621AF63A630071AC80 /* background-01.png */; };
+		961C6E651AF63A6B0071AC80 /* speech-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E641AF63A6B0071AC80 /* speech-bubble.png */; };
+		961C6E6B1AF63A7C0071AC80 /* man-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E661AF63A7C0071AC80 /* man-01.png */; };
+		961C6E6C1AF63A7C0071AC80 /* man-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E671AF63A7C0071AC80 /* man-02.png */; };
+		961C6E6D1AF63A7C0071AC80 /* man-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E681AF63A7C0071AC80 /* man-04.png */; };
+		961C6E6E1AF63A7C0071AC80 /* man-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E691AF63A7C0071AC80 /* man-05.png */; };
+		961C6E6F1AF63A7C0071AC80 /* man-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E6A1AF63A7C0071AC80 /* man-06.png */; };
+		961C6E711AF63A940071AC80 /* button-tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E701AF63A940071AC80 /* button-tick.png */; };
 		9642906F1A824034006011C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642906E1A824034006011C9 /* AppDelegate.swift */; };
 		964290741A824034006011C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964290721A824034006011C9 /* Main.storyboard */; };
 		964290761A824034006011C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964290751A824034006011C9 /* Images.xcassets */; };
@@ -37,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		961C6E601AF63A540071AC80 /* button-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-cross.png"; sourceTree = "<group>"; };
+		961C6E621AF63A630071AC80 /* background-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-01.png"; sourceTree = "<group>"; };
+		961C6E641AF63A6B0071AC80 /* speech-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble.png"; sourceTree = "<group>"; };
+		961C6E661AF63A7C0071AC80 /* man-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-01.png"; sourceTree = "<group>"; };
+		961C6E671AF63A7C0071AC80 /* man-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-02.png"; sourceTree = "<group>"; };
+		961C6E681AF63A7C0071AC80 /* man-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-04.png"; sourceTree = "<group>"; };
+		961C6E691AF63A7C0071AC80 /* man-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-05.png"; sourceTree = "<group>"; };
+		961C6E6A1AF63A7C0071AC80 /* man-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-06.png"; sourceTree = "<group>"; };
+		961C6E701AF63A940071AC80 /* button-tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-tick.png"; sourceTree = "<group>"; };
 		964290691A824034006011C9 /* Are you man enough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Are you man enough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9642906D1A824034006011C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9642906E1A824034006011C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +93,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961C6E491AF639760071AC80 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				961C6E621AF63A630071AC80 /* background-01.png */,
+				961C6E641AF63A6B0071AC80 /* speech-bubble.png */,
+			);
+			name = backgrounds;
+			sourceTree = "<group>";
+		};
+		961C6E4A1AF639840071AC80 /* men */ = {
+			isa = PBXGroup;
+			children = (
+				961C6E661AF63A7C0071AC80 /* man-01.png */,
+				961C6E671AF63A7C0071AC80 /* man-02.png */,
+				961C6E681AF63A7C0071AC80 /* man-04.png */,
+				961C6E691AF63A7C0071AC80 /* man-05.png */,
+				961C6E6A1AF63A7C0071AC80 /* man-06.png */,
+			);
+			name = men;
+			sourceTree = "<group>";
+		};
+		961C6E4B1AF6398D0071AC80 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				961C6E701AF63A940071AC80 /* button-tick.png */,
+				961C6E601AF63A540071AC80 /* button-cross.png */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
 		964290601A824034006011C9 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +184,9 @@
 		9642908E1A824692006011C9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				961C6E4B1AF6398D0071AC80 /* buttons */,
+				961C6E4A1AF639840071AC80 /* men */,
+				961C6E491AF639760071AC80 /* backgrounds */,
 				9642908F1A8246BD006011C9 /* man1.png */,
 			);
 			name = Images;
@@ -245,11 +296,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				964290901A8246BD006011C9 /* man1.png in Resources */,
+				961C6E711AF63A940071AC80 /* button-tick.png in Resources */,
+				961C6E6B1AF63A7C0071AC80 /* man-01.png in Resources */,
+				961C6E6D1AF63A7C0071AC80 /* man-04.png in Resources */,
 				964290741A824034006011C9 /* Main.storyboard in Resources */,
+				961C6E631AF63A630071AC80 /* background-01.png in Resources */,
 				964290791A824034006011C9 /* LaunchScreen.xib in Resources */,
 				964290931A824D10006011C9 /* Questions.plist in Resources */,
 				964290761A824034006011C9 /* Images.xcassets in Resources */,
+				961C6E6E1AF63A7C0071AC80 /* man-05.png in Resources */,
+				961C6E651AF63A6B0071AC80 /* speech-bubble.png in Resources */,
+				961C6E6F1AF63A7C0071AC80 /* man-06.png in Resources */,
 				965882481A8D29CD0066CBBA /* Levels.plist in Resources */,
+				961C6E6C1AF63A7C0071AC80 /* man-02.png in Resources */,
+				961C6E611AF63A540071AC80 /* button-cross.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
