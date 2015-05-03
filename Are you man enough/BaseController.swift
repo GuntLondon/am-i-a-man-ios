@@ -19,12 +19,12 @@ class BaseController: UIViewController {
         
         if (quiz.question.index+1 < quiz.category.questions.count) {
             quiz.increment_question()
-            let vc = storyboard.instantiateViewControllerWithIdentifier("question_view") as UIViewController
+            let vc = storyboard.instantiateViewControllerWithIdentifier("question_view") as! UIViewController
             self.showViewController(vc, sender: self)
             
         } else if ( quiz.category.index+1 < quiz.number_of_categories ) {
             quiz.increment_category()
-            let vc = storyboard.instantiateViewControllerWithIdentifier("category_view") as UIViewController
+            let vc = storyboard.instantiateViewControllerWithIdentifier("category_view") as! UIViewController
             self.showViewController(vc, sender: self)
             
         } else {

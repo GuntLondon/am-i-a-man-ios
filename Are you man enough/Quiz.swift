@@ -113,9 +113,9 @@ class Quiz {
         
         return (
             score: score,
-            level: levels[level_i]["level"] as String,
-            person: levels[level_i]["person"] as String,
-            image: levels[level_i]["image"] as String
+            level: levels[level_i]["level"] as! String,
+            person: levels[level_i]["person"] as! String,
+            image: levels[level_i]["image"] as! String
         )
     }
     
@@ -125,8 +125,8 @@ class Quiz {
     }
     
     private func getLastQuestionIndex() -> Int {
-        let last_category: NSDictionary = categories.lastObject as NSDictionary
-        let last_category_questions: NSArray = last_category["questions"] as NSArray
+        let last_category: NSDictionary = categories.lastObject as! NSDictionary
+        let last_category_questions: NSArray = last_category["questions"] as! NSArray
         return last_category_questions.count - 1
     }
     
@@ -134,16 +134,16 @@ class Quiz {
         let index = user_defaults.integerForKey("category")
         
         category.index = index
-        category.title = categories[index]["title"] as String
-        category.image = categories[index]["image"] as String
-        category.questions = categories[index]["questions"] as NSArray
+        category.title = categories[index]["title"] as! String
+        category.image = categories[index]["image"] as! String
+        category.questions = categories[index]["questions"] as! NSArray
         
         update_question()
     }
     
     private func update_question() {
         question.index = user_defaults.integerForKey("question")
-        question.content = category.questions[question.index] as String
+        question.content = category.questions[question.index] as! String
     }
 
     
