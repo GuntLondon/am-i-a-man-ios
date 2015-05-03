@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         if(quiz.isComplete()){
-            self.performSegueWithIdentifier("showResults", sender: self)
+            self.performSegueWithIdentifier("showResult", sender: self)
         }else{
             if (quiz.question.index > 0) {
                 self.performSegueWithIdentifier("showQuestion", sender: self)
@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func generateFakeResults(sender: AnyObject) {
         quiz.generateFakeResults()
-        self.performSegueWithIdentifier("showResults", sender: self)
+        self.performSegueWithIdentifier("showResult", sender: self)
     }
 
 

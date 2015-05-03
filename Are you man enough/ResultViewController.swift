@@ -12,7 +12,8 @@ class ResultViewController: UIViewController {
 
     
     let quiz = Quiz.sharedInstance
-    @IBOutlet weak var message: UILabel!
+  
+  @IBOutlet weak var message: UILabel!
     /*
     @IBOutlet weak var level_label: UILabel!
     @IBOutlet weak var person_label: UILabel!
@@ -35,9 +36,10 @@ class ResultViewController: UIViewController {
         */
     }
 
-    @IBAction func resetResults(sender: AnyObject) {
-        quiz.reset()
-        self.performSegueWithIdentifier("showHome", sender: self)
-    }
+  @IBAction func resetResults(sender: AnyObject) {
+    quiz.reset()
+    self.performSegueWithIdentifier("showHome", sender: self)
+  }
+
 
 }

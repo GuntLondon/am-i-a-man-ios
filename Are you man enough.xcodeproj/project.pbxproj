@@ -16,6 +16,7 @@
 		961C6E6E1AF63A7C0071AC80 /* man-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E691AF63A7C0071AC80 /* man-05.png */; };
 		961C6E6F1AF63A7C0071AC80 /* man-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E6A1AF63A7C0071AC80 /* man-06.png */; };
 		961C6E711AF63A940071AC80 /* button-tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E701AF63A940071AC80 /* button-tick.png */; };
+		961C6E751AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E741AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png */; };
 		9642906F1A824034006011C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642906E1A824034006011C9 /* AppDelegate.swift */; };
 		964290741A824034006011C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964290721A824034006011C9 /* Main.storyboard */; };
 		964290761A824034006011C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964290751A824034006011C9 /* Images.xcassets */; };
@@ -24,8 +25,8 @@
 		964290931A824D10006011C9 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 964290921A824D10006011C9 /* Questions.plist */; };
 		964290951A8252C7006011C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964290941A8252C7006011C9 /* HomeViewController.swift */; };
 		964290981A826012006011C9 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964290971A826012006011C9 /* CategoryViewController.swift */; };
-		9642909A1A826025006011C9 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964290991A826025006011C9 /* QuestionViewController.swift */; };
 		965882481A8D29CD0066CBBA /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965882471A8D29CD0066CBBA /* Levels.plist */; };
+		969DFFE01AF649A4004A3866 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969DFFDF1AF649A4004A3866 /* QuestionViewController.swift */; };
 		96A3F6D41A87C41900F1C50F /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3F6D31A87C41900F1C50F /* Quiz.swift */; };
 		96C157541A8E2BD600303746 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3F6D31A87C41900F1C50F /* Quiz.swift */; };
 		96C157551A8E2BDC00303746 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 964290921A824D10006011C9 /* Questions.plist */; };
@@ -55,6 +56,7 @@
 		961C6E691AF63A7C0071AC80 /* man-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-05.png"; sourceTree = "<group>"; };
 		961C6E6A1AF63A7C0071AC80 /* man-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-06.png"; sourceTree = "<group>"; };
 		961C6E701AF63A940071AC80 /* button-tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-tick.png"; sourceTree = "<group>"; };
+		961C6E741AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AmIAManYet-Designs-6plus-02-08.png"; sourceTree = "<group>"; };
 		964290691A824034006011C9 /* Are you man enough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Are you man enough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9642906D1A824034006011C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9642906E1A824034006011C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +69,8 @@
 		964290921A824D10006011C9 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
 		964290941A8252C7006011C9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		964290971A826012006011C9 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		964290991A826025006011C9 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		965882471A8D29CD0066CBBA /* Levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+		969DFFDF1AF649A4004A3866 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		96A3F6D31A87C41900F1C50F /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		96C157571A8E483A00303746 /* quizTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizTests.swift; sourceTree = "<group>"; };
 		96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		961C6E491AF639760071AC80 /* backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				961C6E741AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png */,
 				961C6E621AF63A630071AC80 /* background-01.png */,
 				961C6E641AF63A6B0071AC80 /* speech-bubble.png */,
 			);
@@ -207,9 +210,9 @@
 			children = (
 				964290941A8252C7006011C9 /* HomeViewController.swift */,
 				964290971A826012006011C9 /* CategoryViewController.swift */,
-				964290991A826025006011C9 /* QuestionViewController.swift */,
 				96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */,
 				F52E09061AA223C300BAC956 /* BaseController.swift */,
+				969DFFDF1AF649A4004A3866 /* QuestionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961C6E751AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png in Resources */,
 				964290901A8246BD006011C9 /* man1.png in Resources */,
 				961C6E711AF63A940071AC80 /* button-tick.png in Resources */,
 				961C6E6B1AF63A7C0071AC80 /* man-01.png in Resources */,
@@ -331,7 +335,7 @@
 			files = (
 				964290981A826012006011C9 /* CategoryViewController.swift in Sources */,
 				96A3F6D41A87C41900F1C50F /* Quiz.swift in Sources */,
-				9642909A1A826025006011C9 /* QuestionViewController.swift in Sources */,
+				969DFFE01AF649A4004A3866 /* QuestionViewController.swift in Sources */,
 				9642906F1A824034006011C9 /* AppDelegate.swift in Sources */,
 				964290951A8252C7006011C9 /* HomeViewController.swift in Sources */,
 				96F7EF161A8D28C0006B40A6 /* ResultViewController.swift in Sources */,

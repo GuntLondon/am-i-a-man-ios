@@ -6,7 +6,7 @@
 		<key>title</key>
 		<string>DIY</string>
 		<key>image</key>
-		<string>man1.png</string>
+		<string>man-01.png</string>
 		<key>questions</key>
 		<array>
 			<string>Have you successfully bled a radiator?</string>
@@ -19,7 +19,7 @@
 		<key>title</key>
 		<string>Sport &amp; Strength</string>
 		<key>image</key>
-		<string>man1.png</string>
+		<string>man-02.png</string>
 		<key>questions</key>
 		<array>
 			<string>Do you understand the offside rule?</string>
@@ -45,7 +45,7 @@
 		<key>title</key>
 		<string>Man Skills &amp; Achievements</string>
 		<key>image</key>
-		<string>man1.png</string>
+		<string>man-04.png</string>
 		<key>questions</key>
 		<array>
 			<string>Is your after toilet smell as bas as/worse than your dad&apos;s / elder male relative?</string>
@@ -59,7 +59,7 @@
 		<key>title</key>
 		<string>Food &amp; Drink </string>
 		<key>image</key>
-		<string>man1.png</string>
+		<string>man-05.png</string>
 		<key>questions</key>
 		<array>
 			<string>Have you woken up in a different town after a night out?</string>
@@ -71,7 +71,7 @@
 		<key>title</key>
 		<string>Outdoors</string>
 		<key>image</key>
-		<string>man1.png</string>
+		<string>man-06.png</string>
 		<key>questions</key>
 		<array>
 			<string>Have you killed and gutted an animal?</string>
