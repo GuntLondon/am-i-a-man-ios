@@ -18,22 +18,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer 25 questions to find out if you're a real man" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnM-mj-Z6C">
-                                <rect key="frame" x="200" y="113" width="200" height="374"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-wo-Hcb">
+                                <rect key="frame" x="-4" y="0.0" width="608" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsu-zb-63w">
+                                <rect key="frame" x="10" y="30" width="580" height="217"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="speech-bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="WWi-26-z83">
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="217"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJb-HE-VpR">
+                                        <rect key="frame" x="8" y="14" width="559" height="173"/>
+                                        <string key="text">Am I a 
+man, yet?</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <color key="textColor" red="0.84313725490196079" green="0.23921568627450981" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="bGJ-ex-UMG"/>
+                                    <constraint firstItem="WWi-26-z83" firstAttribute="top" secondItem="bsu-zb-63w" secondAttribute="top" id="Dzl-T4-xj0"/>
+                                    <constraint firstAttribute="bottom" secondItem="DJb-HE-VpR" secondAttribute="bottom" constant="30" id="G23-iC-sgf"/>
+                                    <constraint firstAttribute="trailing" secondItem="DJb-HE-VpR" secondAttribute="trailing" constant="13" id="GYi-ff-jn8"/>
+                                    <constraint firstItem="DJb-HE-VpR" firstAttribute="top" secondItem="bsu-zb-63w" secondAttribute="top" constant="14" id="Tco-Zq-cKq"/>
+                                    <constraint firstAttribute="trailing" secondItem="WWi-26-z83" secondAttribute="trailing" id="dkU-4k-Lto"/>
+                                    <constraint firstItem="DJb-HE-VpR" firstAttribute="leading" secondItem="bsu-zb-63w" secondAttribute="leading" constant="8" id="etX-Rr-WiF"/>
+                                    <constraint firstItem="WWi-26-z83" firstAttribute="leading" secondItem="bsu-zb-63w" secondAttribute="leading" id="kU1-EN-EO5"/>
+                                    <constraint firstAttribute="bottom" secondItem="WWi-26-z83" secondAttribute="bottom" id="vVM-O8-Xqh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer 25 questions to find out how much of a man you are" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFp-Mc-bMU">
+                                <rect key="frame" x="149" y="314" width="300" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="iVY-zE-OdQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.79607843137254897" green="0.15294117647058825" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button-down.png" translatesAutoresizingMaskIntoConstraints="NO" id="bkS-0r-vNY">
+                                <rect key="frame" x="275" y="506" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="abj-R0-bwW"/>
+                                    <constraint firstAttribute="width" constant="50" id="b8N-gT-oQ2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="nnM-mj-Z6C" secondAttribute="centerY" id="BO9-Wn-dB2"/>
-                            <constraint firstAttribute="centerX" secondItem="nnM-mj-Z6C" secondAttribute="centerX" id="kfI-N2-WmF"/>
+                            <constraint firstAttribute="centerY" secondItem="CFp-Mc-bMU" secondAttribute="centerY" constant="-60" id="2OP-b4-CpJ"/>
+                            <constraint firstAttribute="centerX" secondItem="CFp-Mc-bMU" secondAttribute="centerX" id="6LS-Sj-SMi"/>
+                            <constraint firstAttribute="centerY" secondItem="bkS-0r-vNY" secondAttribute="centerY" id="HIW-wh-2MN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bsu-zb-63w" secondAttribute="trailing" constant="-6" id="Pm1-Se-P2y"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="VpC-wo-Hcb" secondAttribute="bottom" id="VR8-Ry-bSz"/>
+                            <constraint firstAttribute="centerX" secondItem="bkS-0r-vNY" secondAttribute="centerX" id="XR1-Uu-QQt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VpC-wo-Hcb" secondAttribute="trailing" constant="-20" id="a3E-2v-gQJ"/>
+                            <constraint firstItem="CFp-Mc-bMU" firstAttribute="top" secondItem="bsu-zb-63w" secondAttribute="bottom" constant="30" id="cpZ-1n-eSU"/>
+                            <constraint firstItem="VpC-wo-Hcb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="hzW-JL-Kv5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bkS-0r-vNY" secondAttribute="bottom" constant="44" id="kf8-78-iS1"/>
+                            <constraint firstItem="bsu-zb-63w" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="oTo-RS-cnU"/>
+                            <constraint firstItem="VpC-wo-Hcb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="pxk-2O-Pt4"/>
+                            <constraint firstItem="bsu-zb-63w" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-6" id="q7q-Uc-mrR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HIW-wh-2MN"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="HWJ-mH-ceo" appends="YES" id="3PD-jN-pje"/>
                         </connections>
@@ -74,19 +127,19 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speech-bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="grq-W7-5ME">
                                         <rect key="frame" x="0.0" y="0.0" width="580" height="217"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPu-vY-Mcd">
-                                        <rect key="frame" x="0.0" y="33" width="580" height="164"/>
-                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis elementum commodo. In commodo lobortis accumsan. Quisque pretium mauris vitae porttitor posuere</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" red="0.76078431372549016" green="0.25098039215686274" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNu-8N-rt8">
                                         <rect key="frame" x="0.0" y="8" width="580" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="dBn-Zg-W63"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.76078431372549016" green="0.25098039215686274" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPu-vY-Mcd">
+                                        <rect key="frame" x="0.0" y="33" width="580" height="164"/>
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis elementum commodo. In commodo lobortis accumsan. Quisque pretium mauris vitae porttitor posuere</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" red="0.76078431372549016" green="0.25098039215686274" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -354,6 +407,7 @@
     <resources>
         <image name="background-01.png" width="1125" height="2001"/>
         <image name="button-cross.png" width="180" height="349"/>
+        <image name="button-down.png" width="194" height="194"/>
         <image name="button-tick.png" width="170" height="348"/>
         <image name="man-01.png" width="1125" height="1172"/>
         <image name="speech-bubble.png" width="1066" height="815"/>
