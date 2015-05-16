@@ -10,22 +10,29 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    let quiz = Quiz.sharedInstance
+  let quiz = Quiz.sharedInstance
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if(quiz.isComplete()){
-            self.performSegueWithIdentifier("showResult", sender: self)
-        }else{
-            if (quiz.question.index > 0) {
-                self.performSegueWithIdentifier("showQuestion", sender: self)
-            } else if (quiz.category.index > 0) {
-                self.performSegueWithIdentifier("showCategory", sender: self)
-            }
-        }
+    //quiz.reset()
+    
+    if quiz.isComplete() {
+      println("show results")
+      
+      let vc = self.storyboard?.instantiateViewControllerWithIdentifier("result_view") as! ResultViewController
+      self.navigationController?.pushViewController(vc, animated: false)
+      
+    } else if quiz.question.index > 0 || quiz.category.index > 0 {
+      
+      let vc = self.storyboard?.instantiateViewControllerWithIdentifier("question_view") as! QuestionViewController
+      self.navigationController?.pushViewController(vc, animated: false)
+      
     }
 
+  }
+
+  
     @IBAction func generateFakeResults(sender: AnyObject) {
         quiz.generateFakeResults()
         self.performSegueWithIdentifier("showResult", sender: self)
