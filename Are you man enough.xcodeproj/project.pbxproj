@@ -17,6 +17,8 @@
 		961C6E6F1AF63A7C0071AC80 /* man-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E6A1AF63A7C0071AC80 /* man-06.png */; };
 		961C6E711AF63A940071AC80 /* button-tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E701AF63A940071AC80 /* button-tick.png */; };
 		961C6E751AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 961C6E741AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png */; };
+		9633DBD81B07959600E40247 /* UISpeechBubble.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9633DBD71B07959600E40247 /* UISpeechBubble.xib */; };
+		9633DBDA1B07983200E40247 /* UISpeechBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633DBD91B07983200E40247 /* UISpeechBubble.swift */; };
 		9642906F1A824034006011C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642906E1A824034006011C9 /* AppDelegate.swift */; };
 		964290741A824034006011C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964290721A824034006011C9 /* Main.storyboard */; };
 		964290761A824034006011C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964290751A824034006011C9 /* Images.xcassets */; };
@@ -29,6 +31,8 @@
 		968CB0431AFFCE8D009C34F0 /* button-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 968CB0421AFFCE8D009C34F0 /* button-down.png */; };
 		969DFFE01AF649A4004A3866 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969DFFDF1AF649A4004A3866 /* QuestionViewController.swift */; };
 		96A3F6D41A87C41900F1C50F /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3F6D31A87C41900F1C50F /* Quiz.swift */; };
+		96BF3CB31B08D7F400909C3B /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF3CB21B08D7F400909C3B /* FinishViewController.swift */; };
+		96BF3CB51B08E5E000909C3B /* button-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BF3CB41B08E5E000909C3B /* button-next.png */; };
 		96C157541A8E2BD600303746 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3F6D31A87C41900F1C50F /* Quiz.swift */; };
 		96C157551A8E2BDC00303746 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 964290921A824D10006011C9 /* Questions.plist */; };
 		96C157561A8E2BDF00303746 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965882471A8D29CD0066CBBA /* Levels.plist */; };
@@ -58,6 +62,8 @@
 		961C6E6A1AF63A7C0071AC80 /* man-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-06.png"; sourceTree = "<group>"; };
 		961C6E701AF63A940071AC80 /* button-tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-tick.png"; sourceTree = "<group>"; };
 		961C6E741AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AmIAManYet-Designs-6plus-02-08.png"; sourceTree = "<group>"; };
+		9633DBD71B07959600E40247 /* UISpeechBubble.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UISpeechBubble.xib; sourceTree = "<group>"; };
+		9633DBD91B07983200E40247 /* UISpeechBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISpeechBubble.swift; sourceTree = "<group>"; };
 		964290691A824034006011C9 /* Are you man enough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Are you man enough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9642906D1A824034006011C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9642906E1A824034006011C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		968CB0421AFFCE8D009C34F0 /* button-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down.png"; sourceTree = "<group>"; };
 		969DFFDF1AF649A4004A3866 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		96A3F6D31A87C41900F1C50F /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		96BF3CB21B08D7F400909C3B /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		96BF3CB41B08E5E000909C3B /* button-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-next.png"; sourceTree = "<group>"; };
 		96C157571A8E483A00303746 /* quizTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizTests.swift; sourceTree = "<group>"; };
 		96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F52E09061AA223C300BAC956 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
@@ -122,11 +130,21 @@
 		961C6E4B1AF6398D0071AC80 /* buttons */ = {
 			isa = PBXGroup;
 			children = (
+				96BF3CB41B08E5E000909C3B /* button-next.png */,
 				968CB0421AFFCE8D009C34F0 /* button-down.png */,
 				961C6E701AF63A940071AC80 /* button-tick.png */,
 				961C6E601AF63A540071AC80 /* button-cross.png */,
 			);
 			name = buttons;
+			sourceTree = "<group>";
+		};
+		9633DBD61B07956F00E40247 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				9633DBD71B07959600E40247 /* UISpeechBubble.xib */,
+				9633DBD91B07983200E40247 /* UISpeechBubble.swift */,
+			);
+			name = Elements;
 			sourceTree = "<group>";
 		};
 		964290601A824034006011C9 = {
@@ -150,6 +168,7 @@
 		9642906B1A824034006011C9 /* Are you man enough */ = {
 			isa = PBXGroup;
 			children = (
+				9633DBD61B07956F00E40247 /* Elements */,
 				964290961A825FE4006011C9 /* Controllers */,
 				964290911A824CE8006011C9 /* Model */,
 				9642908E1A824692006011C9 /* Images */,
@@ -216,6 +235,7 @@
 				96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */,
 				F52E09061AA223C300BAC956 /* BaseController.swift */,
 				969DFFDF1AF649A4004A3866 /* QuestionViewController.swift */,
+				96BF3CB21B08D7F400909C3B /* FinishViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +326,7 @@
 				961C6E711AF63A940071AC80 /* button-tick.png in Resources */,
 				968CB0431AFFCE8D009C34F0 /* button-down.png in Resources */,
 				961C6E6B1AF63A7C0071AC80 /* man-01.png in Resources */,
+				9633DBD81B07959600E40247 /* UISpeechBubble.xib in Resources */,
 				961C6E6D1AF63A7C0071AC80 /* man-04.png in Resources */,
 				964290741A824034006011C9 /* Main.storyboard in Resources */,
 				961C6E631AF63A630071AC80 /* background-01.png in Resources */,
@@ -316,6 +337,7 @@
 				961C6E651AF63A6B0071AC80 /* speech-bubble.png in Resources */,
 				961C6E6F1AF63A7C0071AC80 /* man-06.png in Resources */,
 				965882481A8D29CD0066CBBA /* Levels.plist in Resources */,
+				96BF3CB51B08E5E000909C3B /* button-next.png in Resources */,
 				961C6E6C1AF63A7C0071AC80 /* man-02.png in Resources */,
 				961C6E611AF63A540071AC80 /* button-cross.png in Resources */,
 			);
@@ -338,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				964290981A826012006011C9 /* CategoryViewController.swift in Sources */,
+				9633DBDA1B07983200E40247 /* UISpeechBubble.swift in Sources */,
+				96BF3CB31B08D7F400909C3B /* FinishViewController.swift in Sources */,
 				96A3F6D41A87C41900F1C50F /* Quiz.swift in Sources */,
 				969DFFE01AF649A4004A3866 /* QuestionViewController.swift in Sources */,
 				9642906F1A824034006011C9 /* AppDelegate.swift in Sources */,

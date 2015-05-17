@@ -22,6 +22,7 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      /*
         let result = quiz.result()
         var descriptor = ""
         if result.score >= 10 {
@@ -34,6 +35,7 @@ class ResultViewController: UIViewController {
         Twitter Facebook Email
         Rank
         */
+*/
     }
 
   @IBAction func resetResults(sender: AnyObject) {

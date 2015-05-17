@@ -12,13 +12,17 @@ class HomeViewController: UIViewController {
 
   let quiz = Quiz.sharedInstance
 
+  @IBOutlet weak var speechBubble: UISpeechBubble!
+  @IBOutlet weak var message: UILabel!
+  @IBOutlet weak var button: UIImageView!
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     //quiz.reset()
     
     if quiz.isComplete() {
-      println("show results")
       
       let vc = self.storyboard?.instantiateViewControllerWithIdentifier("result_view") as! ResultViewController
       self.navigationController?.pushViewController(vc, animated: false)
@@ -28,8 +32,19 @@ class HomeViewController: UIViewController {
       let vc = self.storyboard?.instantiateViewControllerWithIdentifier("question_view") as! QuestionViewController
       self.navigationController?.pushViewController(vc, animated: false)
       
-    }
+    } 
 
+    self.message.alpha = 0.0
+    self.button.alpha = 0.0
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    speechBubble.say("Am I a\nman, yet?", size: .Huge, completion: {
+      UIView.animateWithDuration(1, animations: {
+        self.message.alpha = 1.0
+        self.button.alpha = 1.0
+      })
+    })
   }
 
   
