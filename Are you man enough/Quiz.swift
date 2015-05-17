@@ -97,7 +97,7 @@ class Quiz {
         update_category()
     }
     
-    func result() -> (score:Int, level:String, person:String, image:String) {
+    func result() -> (score:Int, level:String, person:String ) {
         
         //load levels
         let path = NSBundle.mainBundle().pathForResource("Levels", ofType: "plist")
@@ -106,16 +106,14 @@ class Quiz {
         // TODO: calculate dynamically from question set 
         let number_of_questions = 25;
         
-        let level_i = Int((Float(score) / Float(number_of_questions)) * Float(levels.count))
-
-        println( level_i )
-        println( levels[level_i]["level"] )
+        var level_i = Int((Float(score) / Float(number_of_questions)) * Float(levels.count))
+        level_i = (level_i>9) ? 9 : level_i;
+      
         
         return (
             score: score,
             level: levels[level_i]["level"] as! String,
-            person: levels[level_i]["person"] as! String,
-            image: levels[level_i]["image"] as! String
+            person: levels[level_i]["person"] as! String
         )
     }
     

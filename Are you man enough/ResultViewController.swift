@@ -11,17 +11,18 @@ import UIKit
 class ResultViewController: UIViewController {
 
     
-    let quiz = Quiz.sharedInstance
+  let quiz = Quiz.sharedInstance
   
-  @IBOutlet weak var message: UILabel!
-    /*
-    @IBOutlet weak var level_label: UILabel!
-    @IBOutlet weak var person_label: UILabel!
-    @IBOutlet weak var person_image: UIImageView!
-    */
+  @IBOutlet weak var levelLabel: UILabel!
+  @IBOutlet weak var pointsLabel: UILabel!
+      
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    let result = quiz.result()
+    levelLabel.text = result.level
+    pointsLabel.text = "With \(result.score) points"
+
       /*
         let result = quiz.result()
         var descriptor = ""
@@ -36,12 +37,8 @@ class ResultViewController: UIViewController {
         Rank
         */
 */
-    }
-
-  @IBAction func resetResults(sender: AnyObject) {
-    quiz.reset()
-    self.performSegueWithIdentifier("showHome", sender: self)
   }
+
 
 
 }
