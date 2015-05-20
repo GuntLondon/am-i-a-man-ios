@@ -97,12 +97,12 @@ class Quiz {
         update_category()
     }
     
-    func result() -> (score:Int, level:String, person:String ) {
+  func result() -> (score:Int, level:String, levels:[[String:String]], my_level:[String:String] ) {
         
         //load levels
         let path = NSBundle.mainBundle().pathForResource("Levels", ofType: "plist")
         let levels = NSArray(contentsOfFile: path!)!
-        
+
         // TODO: calculate dynamically from question set 
         let number_of_questions = 25;
         
@@ -111,9 +111,10 @@ class Quiz {
       
         
         return (
-            score: score,
-            level: levels[level_i]["level"] as! String,
-            person: levels[level_i]["person"] as! String
+          score: score,
+          level: levels[level_i]["level"] as! String,
+          levels: levels as! [[String : String]],
+          my_level: levels[level_i] as! [String : String]
         )
     }
     

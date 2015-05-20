@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    quiz.reset()
+    //quiz.reset()
     
     if quiz.isComplete() {
       
