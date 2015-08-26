@@ -32,7 +32,7 @@
 		<key>title</key>
 		<string>Pain, Violence and Illegal Activities</string>
 		<key>image</key>
-		<string>man1.png</string>
+		<string>man-06.png</string>
 		<key>questions</key>
 		<array>
 			<string>Have you been punched in the face?</string>
@@ -49,10 +49,10 @@
 		<key>questions</key>
 		<array>
 			<string>Is your after toilet smell as bas as/worse than your dad&apos;s / elder male relative?</string>
-			<string>Have you worn the same pair of underpants for more than two consecutive days, with or without turning them inside out?</string>
+			<string>Have you worn the same pair of underpants for more than two consecutive days?</string>
 			<string>Have you not shaved for more than three months?</string>
 			<string>Can you credibly explain how a &quot;twin overhead cam shaft&quot; works?</string>
-			<string>Have you spent more than a trivial amount of time considering your plan of action come the fall of society and / or the zombie apocalypse.</string>
+			<string>Do you have a plan of action come the fall of society and / or the zombie apocalypse.</string>
 		</array>
 	</dict>
 	<dict>
