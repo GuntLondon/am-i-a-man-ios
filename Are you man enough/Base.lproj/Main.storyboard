@@ -365,7 +365,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rde-5A-T37" kind="modal" id="bvb-Nv-yqz"/>
+                                    <segue destination="rde-5A-T37" kind="presentation" id="bvb-Nv-yqz"/>
                                 </connections>
                             </button>
                         </subviews>
