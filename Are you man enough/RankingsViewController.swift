@@ -46,17 +46,21 @@ class RankingsViewController: UIViewController {
     for level in result.levels {
       count++
       let label: UILabel
+      let person: String
+      var fontSize:CGFloat = 14
+      
       if level == result.my_level {
         label = UILabel(frame: CGRect(x: CGFloat(0), y: currentTop, width: labelWidth, height: bigLabelHeight))
-        label.font = label.font.fontWithSize(19)
+        fontSize = 19
         currentTop += 10
+        person = "YOU!"
       } else {
         label = UILabel(frame: CGRect(x: CGFloat(0), y: currentTop, width: labelWidth, height: labelHeight))
-        label.font = label.font.fontWithSize(14)
+        person = level["person"]!
       }
       let manLevel = level["level"]!
-      let person = level["person"]!
-      label.text = "\(count). \(manLevel) \(person)"
+      label.text = "\(count). \(manLevel) - \(person)"
+      label.font = label.font.fontWithSize(fontSize)
       label.textColor = UIColor(red: 0.796, green: 0.152, blue: 0.192, alpha: 1.0)
       ranksView.addSubview(label)
       currentTop += labelHeight
