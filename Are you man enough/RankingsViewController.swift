@@ -14,9 +14,13 @@ class RankingsViewController: UIViewController {
   
   @IBOutlet weak var ranksView: UIView!
   
+  @IBAction func backToResults(sender: AnyObject) {
+    println("back button clicked")
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
   }
 
   override func viewDidAppear(animated: Bool) {
