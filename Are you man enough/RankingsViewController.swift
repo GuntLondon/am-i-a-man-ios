@@ -14,45 +14,59 @@ class RankingsViewController: UIViewController {
   
   @IBOutlet weak var ranksView: UIView!
   
+  @IBAction func backToResults(sender: AnyObject) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  @IBAction func resetButton(sender: AnyObject) {
+    var alert = UIAlertController(title: "Are you sure you want to reset?", message: "All data will be lost. Real men don't reset", preferredStyle: UIAlertControllerStyle.Alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action: UIAlertAction!) in
+      self.quiz.reset()
+      self.performSegueWithIdentifier("resetSegue", sender: self)
+    }))
+    alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+      // Nothing to do on cancel
+    }))
+    presentViewController(alert, animated: true, completion: nil)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
   }
 
   override func viewDidAppear(animated: Bool) {
 
     let result = quiz.result()
-    
     let labelWidth = CGRectGetWidth(ranksView.bounds)
     let labelHeight = (CGRectGetHeight(ranksView.bounds)-10) / CGFloat(result.levels.count)
     let bigLabelHeight = labelHeight + 10
     var currentTop:CGFloat = 0
+    var count = 0
+    let levels = result.levels.reverse()
     
-    for level in result.levels {
+    for level in levels {
+      count++
+      let label: UILabel
+      let person: String
+      var fontSize:CGFloat = 14
       
       if level == result.my_level {
-        var label = UILabel(frame: CGRect(x: CGFloat(0), y: currentTop, width: labelWidth, height: bigLabelHeight))
-        label.text = level["level"]! + " / " + level["person"]!
-        label.font = label.font.fontWithSize(19)
-        label.textColor = UIColor(red: 0.796, green: 0.152, blue: 0.192, alpha: 1.0)
-        
-        //http://makeapppie.com/2014/10/20/swift-swift-using-attributed-strings-in-swift/
-        ranksView.addSubview(label)
+        label = UILabel(frame: CGRect(x: CGFloat(0), y: currentTop, width: labelWidth, height: bigLabelHeight))
+        fontSize = 19
         currentTop += 10
+        person = "YOU!"
       } else {
-        var label = UILabel(frame: CGRect(x: CGFloat(0), y: currentTop, width: labelWidth, height: labelHeight))
-        label.text = level["level"]! + " / " + level["person"]!
-        label.font = label.font.fontWithSize(14)
-        label.textColor = UIColor(red: 0.796, green: 0.152, blue: 0.192, alpha: 1.0)
-        ranksView.addSubview(label)
+        label = UILabel(frame: CGRect(x: CGFloat(0), y: currentTop, width: labelWidth, height: labelHeight))
+        person = level["person"]!
       }
-      
+      let manLevel = level["level"]!
+      label.text = "\(count). \(manLevel) - \(person)"
+      label.font = label.font.fontWithSize(fontSize)
+      label.textColor = UIColor(red: 0.796, green: 0.152, blue: 0.192, alpha: 1.0)
+      ranksView.addSubview(label)
       currentTop += labelHeight
     }
-    
-
 
   }
 
-  
 }

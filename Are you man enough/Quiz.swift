@@ -37,8 +37,7 @@ class Quiz {
         index: 0,
         content: ""
     )
-    
-    //private variables
+  
     private var user_defaults  = NSUserDefaults.standardUserDefaults()
     private var categories: NSArray
     private var score:Int = 0
@@ -56,8 +55,7 @@ class Quiz {
         //set score
         score = user_defaults.integerForKey("score")
     }
-    
-    //public functions
+  
     func reset() {
         user_defaults.setInteger(0, forKey: "category")
         user_defaults.setInteger(0, forKey: "question")
@@ -97,11 +95,11 @@ class Quiz {
         update_category()
     }
     
-  func result() -> (score:Int, level:String, levels:[[String:String]], my_level:[String:String] ) {
+    func result() -> (score:Int, level:String, levels:[[String:String]], my_level:[String:String] ) {
         
         //load levels
         let path = NSBundle.mainBundle().pathForResource("Levels", ofType: "plist")
-        let levels = NSArray(contentsOfFile: path!)!
+        let levels = NSArray(contentsOfFile: path!)! as Array
 
         // TODO: calculate dynamically from question set 
         let number_of_questions = 25;
@@ -118,7 +116,6 @@ class Quiz {
         )
     }
     
-    //private functions
     private func getLastCategoryIndex() -> Int {
         return number_of_categories - 1
     }
