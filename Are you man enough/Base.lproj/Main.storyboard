@@ -505,7 +505,7 @@
                     </view>
                     <connections>
                         <outlet property="ranksView" destination="qoT-Qh-2Br" id="ayi-ES-ktk"/>
-                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="resetSegue" id="Zh3-3L-nnU"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="resetSegue" id="Zh3-3L-nnU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBZ-9e-3SO" userLabel="First Responder" sceneMemberID="firstResponder"/>
