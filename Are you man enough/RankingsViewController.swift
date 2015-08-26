@@ -15,8 +15,19 @@ class RankingsViewController: UIViewController {
   @IBOutlet weak var ranksView: UIView!
   
   @IBAction func backToResults(sender: AnyObject) {
-    println("back button clicked")
     self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  @IBAction func resetButton(sender: AnyObject) {
+    var alert = UIAlertController(title: "Are you sure you want to reset?", message: "All data will be lost. Real men don't reset", preferredStyle: UIAlertControllerStyle.Alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action: UIAlertAction!) in
+      self.quiz.reset()
+      self.performSegueWithIdentifier("resetSegue", sender: self)
+    }))
+    alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+      // Nothing to do on cancel
+    }))
+    presentViewController(alert, animated: true, completion: nil)
   }
   
   override func viewDidLoad() {
