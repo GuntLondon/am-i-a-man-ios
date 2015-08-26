@@ -40,6 +40,7 @@
 		96C157561A8E2BDF00303746 /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965882471A8D29CD0066CBBA /* Levels.plist */; };
 		96C157581A8E483A00303746 /* quizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C157571A8E483A00303746 /* quizTests.swift */; };
 		96F7EF161A8D28C0006B40A6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */; };
+		F56A4B9B1B8DFF2F00E7FBBE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A4B9A1B8DFF2F00E7FBBE /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		96BF3CBA1B08F6B200909C3B /* button-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-big.png"; sourceTree = "<group>"; };
 		96C157571A8E483A00303746 /* quizTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizTests.swift; sourceTree = "<group>"; };
 		96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F56A4B9A1B8DFF2F00E7FBBE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../Documents/Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				9642908E1A824692006011C9 /* Images */,
 				9642906E1A824034006011C9 /* AppDelegate.swift */,
 				964290721A824034006011C9 /* Main.storyboard */,
+				F56A4B9A1B8DFF2F00E7FBBE /* Media.xcassets */,
 				964290751A824034006011C9 /* Images.xcassets */,
 				964290771A824034006011C9 /* LaunchScreen.xib */,
 				9642906C1A824034006011C9 /* Supporting Files */,
@@ -292,7 +295,7 @@
 				TargetAttributes = {
 					964290681A824034006011C9 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 8G9A77V59L;
+						DevelopmentTeam = GUYSEY2XMT;
 					};
 					9642907D1A824034006011C9 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -340,6 +343,7 @@
 				961C6E6E1AF63A7C0071AC80 /* man-05.png in Resources */,
 				96BF3CBB1B08F6B200909C3B /* button-big.png in Resources */,
 				961C6E651AF63A6B0071AC80 /* speech-bubble.png in Resources */,
+				F56A4B9B1B8DFF2F00E7FBBE /* Media.xcassets in Resources */,
 				961C6E6F1AF63A7C0071AC80 /* man-06.png in Resources */,
 				965882481A8D29CD0066CBBA /* Levels.plist in Resources */,
 				96BF3CB51B08E5E000909C3B /* button-next.png in Resources */,
