@@ -99,8 +99,7 @@ class Quiz {
         
         //load levels
         let path = NSBundle.mainBundle().pathForResource("Levels", ofType: "plist")
-        var levels = NSArray(contentsOfFile: path!)! as Array
-        levels = levels.reverse()
+        let levels = NSArray(contentsOfFile: path!)! as Array
 
         // TODO: calculate dynamically from question set 
         let number_of_questions = 25;

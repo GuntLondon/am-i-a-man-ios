@@ -42,8 +42,9 @@ class RankingsViewController: UIViewController {
     let bigLabelHeight = labelHeight + 10
     var currentTop:CGFloat = 0
     var count = 0
+    let levels = result.levels.reverse()
     
-    for level in result.levels {
+    for level in levels {
       count++
       let label: UILabel
       let person: String

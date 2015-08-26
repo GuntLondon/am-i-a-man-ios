@@ -21,22 +21,20 @@ class ResultViewController: UIViewController {
     
     let result = quiz.result()
     levelLabel.text = result.level
-    pointsLabel.text = "With \(result.score) points"
-
-      /*
-        let result = quiz.result()
-        var descriptor = ""
-        if result.score >= 10 {
-            descriptor = "mighty"
-        }else{
-            descriptor = "miserable"
-        }
-        message.text = "You are a \(result.level) with \(result.score) \(descriptor) man points."
-        /*
-        Twitter Facebook Email
-        Rank
-        */
-*/
+    
+    var descriptor = ""
+    if result.score >= 10 {
+        descriptor = "mighty"
+    }else{
+        descriptor = "miserable"
+    }
+    pointsLabel.text = "With \(result.score) \(descriptor) man points"
+    /*
+    TODO: add buttons:
+    Twitter
+    Facebook
+    Email
+    */
   }
 
 

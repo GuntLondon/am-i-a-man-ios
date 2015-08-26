@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
     
     quiz.reset()
-    quiz.generateFakeResults()
+    //quiz.generateFakeResults()
     
     if quiz.isComplete() {
       
