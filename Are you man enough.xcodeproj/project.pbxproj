@@ -22,7 +22,6 @@
 		9633DBDA1B07983200E40247 /* UISpeechBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633DBD91B07983200E40247 /* UISpeechBubble.swift */; };
 		9642906F1A824034006011C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9642906E1A824034006011C9 /* AppDelegate.swift */; };
 		964290741A824034006011C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 964290721A824034006011C9 /* Main.storyboard */; };
-		964290761A824034006011C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964290751A824034006011C9 /* Images.xcassets */; };
 		964290791A824034006011C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964290771A824034006011C9 /* LaunchScreen.xib */; };
 		964290901A8246BD006011C9 /* man1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9642908F1A8246BD006011C9 /* man1.png */; };
 		964290931A824D10006011C9 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 964290921A824D10006011C9 /* Questions.plist */; };
@@ -72,7 +71,6 @@
 		9642906D1A824034006011C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9642906E1A824034006011C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		964290731A824034006011C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		964290751A824034006011C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		964290781A824034006011C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9642907E1A824034006011C9 /* Are you man enoughTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Are you man enoughTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		964290831A824034006011C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				9642908E1A824692006011C9 /* Images */,
 				9642906E1A824034006011C9 /* AppDelegate.swift */,
 				964290721A824034006011C9 /* Main.storyboard */,
-				964290751A824034006011C9 /* Images.xcassets */,
 				F557C0A91BB2CCC300E1F634 /* Media2.xcassets */,
 				964290771A824034006011C9 /* LaunchScreen.xib */,
 				9642906C1A824034006011C9 /* Supporting Files */,
@@ -343,7 +340,6 @@
 				964290791A824034006011C9 /* LaunchScreen.xib in Resources */,
 				964290931A824D10006011C9 /* Questions.plist in Resources */,
 				96BF3CB91B08E8AA00909C3B /* line.png in Resources */,
-				964290761A824034006011C9 /* Images.xcassets in Resources */,
 				961C6E6E1AF63A7C0071AC80 /* man-05.png in Resources */,
 				96BF3CBB1B08F6B200909C3B /* button-big.png in Resources */,
 				961C6E651AF63A6B0071AC80 /* speech-bubble.png in Resources */,
