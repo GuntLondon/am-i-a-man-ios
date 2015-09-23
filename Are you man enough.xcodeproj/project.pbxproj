@@ -41,6 +41,7 @@
 		96C157581A8E483A00303746 /* quizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C157571A8E483A00303746 /* quizTests.swift */; };
 		96F7EF161A8D28C0006B40A6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */; };
 		F56A4B9B1B8DFF2F00E7FBBE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A4B9A1B8DFF2F00E7FBBE /* Media.xcassets */; };
+		F5D772FD1B8F63B90001E314 /* man-03.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D772FC1B8F63B90001E314 /* man-03.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		96C157571A8E483A00303746 /* quizTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizTests.swift; sourceTree = "<group>"; };
 		96F7EF151A8D28C0006B40A6 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F56A4B9A1B8DFF2F00E7FBBE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../Documents/Media.xcassets; sourceTree = "<group>"; };
+		F5D772FC1B8F63B90001E314 /* man-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "man-03.png"; path = "../../../Dropbox/gunt/projects/Am I a man yet/assets/6 Plus/man-03.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				961C6E661AF63A7C0071AC80 /* man-01.png */,
 				961C6E671AF63A7C0071AC80 /* man-02.png */,
+				F5D772FC1B8F63B90001E314 /* man-03.png */,
 				961C6E681AF63A7C0071AC80 /* man-04.png */,
 				961C6E691AF63A7C0071AC80 /* man-05.png */,
 				961C6E6A1AF63A7C0071AC80 /* man-06.png */,
@@ -329,6 +332,7 @@
 			files = (
 				961C6E751AF643E20071AC80 /* AmIAManYet-Designs-6plus-02-08.png in Resources */,
 				964290901A8246BD006011C9 /* man1.png in Resources */,
+				F5D772FD1B8F63B90001E314 /* man-03.png in Resources */,
 				961C6E711AF63A940071AC80 /* button-tick.png in Resources */,
 				968CB0431AFFCE8D009C34F0 /* button-down.png in Resources */,
 				961C6E6B1AF63A7C0071AC80 /* man-01.png in Resources */,

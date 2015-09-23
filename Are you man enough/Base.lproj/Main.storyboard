@@ -417,7 +417,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="x29-Xf-mc3">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="X8K-eE-DA6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="X8K-eE-DA6">
                                 <rect key="frame" x="263" y="68" width="75" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="83e-hF-0ah"/>
@@ -431,7 +431,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="osf-15-fxt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="osf-15-fxt">
                                 <rect key="frame" x="262" y="552" width="75" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="1f1-oH-J92"/>
@@ -448,33 +448,40 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1t-bo-t26">
-                                <rect key="frame" x="232" y="28" width="137" height="30"/>
-                                <state key="normal" title="Back to your results">
-                                    <color key="titleColor" red="0.79607843140000001" green="0.1529411765" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1t-bo-t26">
+                                <rect key="frame" x="232" y="28" width="200" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="3WD-Dx-nb3"/>
+                                    <constraint firstAttribute="width" constant="200" id="KfL-v0-e4h"/>
+                                </constraints>
+                                <state key="normal" title="Back to your results" backgroundImage="button-big.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="backToResults:" destination="rde-5A-T37" eventType="touchUpInside" id="GkH-8Z-uvT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkE-G9-mUe">
-                                <rect key="frame" x="243" y="562" width="115" height="30"/>
-                                <state key="normal" title="Reset the scores">
-                                    <color key="titleColor" red="0.79607843140000001" green="0.1529411765" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkE-G9-mUe">
+                                <rect key="frame" x="243" y="562" width="200" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="swg-bC-8Gg"/>
+                                    <constraint firstAttribute="height" constant="46" id="zWD-4o-7aY"/>
+                                </constraints>
+                                <state key="normal" title="Reset the scores" backgroundImage="button-big.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="resetButton:" destination="rde-5A-T37" eventType="touchUpInside" id="SOV-1M-ci5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rankings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfZ-uy-OH5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rankings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfZ-uy-OH5">
                                 <rect key="frame" x="0.0" y="90" width="600" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.79607843140000001" green="0.1529411765" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-Qh-2Br">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-Qh-2Br">
                                 <rect key="frame" x="160" y="129" width="280" height="415"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="T6Y-iR-ZCq"/>
